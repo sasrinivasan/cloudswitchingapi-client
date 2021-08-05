@@ -7,6 +7,8 @@ The script is tested with Python 3.7.2 and is recommended minimum version. More 
 **Installing dependencies**
 requirements.txt is provided which can be used to install  dependencies like so:
 pip install -r requirements.txt
+
+
 **Changing script to suit your requirements** (Perform these steps before running)
 1. Edit the following lines with your credentials (and server information if applicable)
 
