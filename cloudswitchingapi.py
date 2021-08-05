@@ -8,10 +8,10 @@ import os
 okRespCodeList=[200,202]
 
 # Insert API server URL and login credentials
-apiurl="https://g2-api.qa.xcloudiq.com/"
-xiquser="sasrinivasan@extremenetworks.com"
-xiqpass="Aerohive123"
-authurl="https://g2-api.qa.xcloudiq.com/login"
+apiurl="https://api.extremecloudiq.com/"
+xiquser="someone@example.com"
+xiqpass="mypassword"
+authurl="https://api.extremecloudiq.com/login"
 
 
 headers = {
@@ -32,7 +32,7 @@ def CheckRestError(status_code=500,response=""):
     return respOK
 
 def CreateLogReport(logname='Logs_'):
-    filename= testname +"_"+ datetime.datetime.now().strftime("%Y%m%d-%H%M%S")+'.log'
+    filename= logname +"_"+ datetime.datetime.now().strftime("%Y%m%d-%H%M%S")+'.log'
     if not os.path.exists("Testlog"):
         os.makedirs("Testlog")
         
@@ -164,7 +164,7 @@ if __name__=="__main__":
    
 
         
-    CreateLogReport(lognname="CloudSwitching")
+    CreateLogReport(logname="CloudSwitching")
   
     #insert serial  numbers seperated by commas
     snsList=["2008G-01292","2041G-01667"]
