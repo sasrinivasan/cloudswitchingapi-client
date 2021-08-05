@@ -1,22 +1,17 @@
-
-import json
 import logging
 import requests
-import  inspect
-import  datetime
-
-r
+import inspect
+import datetime
 import  logging as logger
 import os
 
 okRespCodeList=[200,202]
 
 # Insert API server URL and login credentials
-apiurl="https://api.extremecloudiq.com/"
-xiquser="myid@example.com"
-xiqpass="password"
-authurl="https://api.extremecloudiq.com/login"
-
+apiurl="https://g2-api.qa.xcloudiq.com/"
+xiquser="sasrinivasan@extremenetworks.com"
+xiqpass="Aerohive123"
+authurl="https://g2-api.qa.xcloudiq.com/login"
 
 
 headers = {
@@ -172,12 +167,12 @@ if __name__=="__main__":
     CreateLogReport(lognname="CloudSwitching")
   
     #insert serial  numbers seperated by commas
-    snsList=["xxxxx"]
+    snsList=["2008G-01292","2041G-01667"]
     accessToken,auth_token_header_value=xiqlogin(url=authurl,user=xiquser,passwd=xiqpass)
     logger.info(auth_token_header_value)
     cliExecTimeList=[]
 
-   #Inser command- 1 Command per request allowed in current release
+   #Insert command- 1 Command per request allowed in current release
     clilist=[r"show version"]
     cliresp={}
     cliExecTIme={}
