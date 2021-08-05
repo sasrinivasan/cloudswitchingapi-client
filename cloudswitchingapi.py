@@ -167,7 +167,7 @@ if __name__=="__main__":
     CreateLogReport(logname="CloudSwitching")
   
     #insert serial  numbers seperated by commas
-    snsList=["2008G-01292","2041G-01667"]
+    snsList=["xxxxx2","xxxxx"]
     accessToken,auth_token_header_value=xiqlogin(url=authurl,user=xiquser,passwd=xiqpass)
     logger.info(auth_token_header_value)
     cliExecTimeList=[]
