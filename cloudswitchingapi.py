@@ -173,7 +173,7 @@ if __name__=="__main__":
     cliExecTimeList=[]
 
    #Insert command- 1 Command per request allowed in current release
-    clilist=[r"show version"]
+    clilist=["show version"]
     cliresp={}
     cliExecTIme={}
     cliresp,cliExecTIme=xiqSwitchingApi(cliList=clilist,snsList=snsList,auth_token=auth_token_header_value)
