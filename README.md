@@ -22,7 +22,7 @@ CreateLogReport(lognname="CloudSwitching") - Change the log file to suit your re
   
  snsList=["xxxxx"]- Insert valid serial numbers seperated by commas
  
- clilist=[r"show version"]- Insert command,  note that current implementaiton of API supports 1 command per request.
+ clilist=["show version"]- Insert command,  note that current implementaiton of API supports 1 command per request.
  
  
 
