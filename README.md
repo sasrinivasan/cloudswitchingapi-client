@@ -23,10 +23,15 @@ CreateLogReport(lognname="CloudSwitching") - Change the log file to suit your re
  snsList=["xxxxx"]- Insert valid serial numbers seperated by commas
  
  clilist=[<command>>]- Insert command,  note that current implementaiton of API supports 1 command per request.
+ 
  #Exos Example
+ 
  clilist=["show version"]
+ 
  #Voss Example
+ 
  #Note \r cshould be used to get into correct CLI mode.
+ 
  clilist=["configure terminal\rinterface gigabitEthernet 1/3\rno shutdown"]
  
  
