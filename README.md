@@ -12,8 +12,11 @@ requirements.txt is provided - Pip can be used to install the requirements.
 1. Edit the following lines with your credentials (and server information if applicable)
 
 apiurl=https://api.extremecloudiq.com/
+
 xiquser=myid@example.com
+
 xiqpass="password"
+
 authurl=https://api.extremecloudiq.com/login
 
 2. Edit the following under  _main
