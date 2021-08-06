@@ -43,6 +43,9 @@ CreateLogReport(lognname="CloudSwitching") - Change the log file to suit your re
 Use python or python3 to run the script
 python cloudswitchingapi.py
 
-The script will create a TestLog directory and log result of execution in it
+The script will create a TestLog directory and logfile with time stamp
 
 Here is sample execution output
+[11:52:57] {cloudswitchingapi.py:180} INFO - {'device_cli_outputs': {'187XXXXXXX': [{'cli': 'show version', 'output': 'show version \nSwitch          : 800994-00-03 2008G-01292 Rev 03 BootROM: 2.2.1.6    IMG: 31.3.1.3  \n5520-VIM-4X-1   : 800997-00-03 2012G-01104 Rev 03\n\nImage   : ExtremeXOS version 31.3.1.3 by release-manager\n          on Wed May 12 16:45:50 EDT 2021\nBootROM : Default 2.2.1.6  Alternate 2.2.1.6\nDiagnostics : \nCertified Version : EXOS Linux 4.14.200, Extreme Networks FIPS Object Module 2.0.16a\nBuild Tools Version : exos-arm64-sdk-3.1.4.1.0\n* 5520-48W-EXOS.4 #', 'response_code': 'CLI_RESPONSE_CODE_CLI_SENT_SUCCEED'}], '18XXXXXX': [{'cli': 'show version', 'output': 'show version \nSwitch          : 801084-00-02 2041G-01667 Rev 02 BootROM: 2.3.2.1    IMG: 31.3.1.3  \n\nImage   : ExtremeXOS version 31.3.1.3 by release-manager\n          on Wed May 12 16:45:50 EDT 2021\nBootROM : Default 2.3.2.1  Alternate 2.3.2.1\nDiagnostics : \nCertified Version : EXOS Linux 4.14.200, Extreme Networks FIPS Object Module 2.0.16a\nBuild Tools Version : exos-arm64-sdk-3.1.4.1.0\n* 5420F-24P-4XE-EXOS.4 #', 'response_code': 'CLI_RESPONSE_CODE_CLI_SENT_SUCCEED'}]}}
+[11:52:57] {cloudswitchingapi.py:181} INFO - Execution time for CLI is>> {'devices': {'ids': [18XXXXX, 18XXXXXXXX]}, 'clis': ['show version'], 'execTime': [datetime.timedelta(seconds=58, microseconds=451560)]}
+
